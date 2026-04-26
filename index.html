@@ -3,168 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jayden Currence - Game Producer portfolio showcasing experience in team leadership, project management, and game development with Godot and Unity.">
     <title>Jayden Currence | Game Producer</title>
-    <style>
-        /* Catppuccin Macchiato Palette */
-        :root {
-            --base: #24273a;
-            --mantle: #1e2030;
-            --crust: #181926;
-            --text: #cad3f5;
-            --subtext1: #b8c0e0;
-            --subtext0: #a5adcb;
-            --green: #a6da95;
-            --blue: #8aadf4;
-            --mauve: #c6a0f6;
-            --red: #ed8796;
-            --peach: #f5a97f;
-            --yellow: #eed49f;
-            --overlay0: #6e738d;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--crust);
-            color: var(--text);
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 1.5;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .terminal-window {
-            background-color: var(--base);
-            width: 100%;
-            max-width: 950px;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            overflow: hidden;
-            border: 1px solid var(--overlay0);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .terminal-header {
-            background-color: var(--mantle);
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid var(--overlay0);
-        }
-
-        .window-controls {
-            display: flex;
-            gap: 8px;
-        }
-
-        .control {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .close { background-color: var(--red); }
-        .minimize { background-color: var(--yellow); }
-        .maximize { background-color: var(--green); }
-
-        .terminal-title {
-            flex-grow: 1;
-            text-align: center;
-            color: var(--subtext0);
-            font-size: 0.8em;
-            white-space: nowrap;
-        }
-
-        .terminal-body {
-            padding: 15px;
-            height: 85vh;
-            overflow-y: auto;
-            font-size: 14px;
-        }
-
-        .prompt { color: var(--green); font-weight: bold; }
-        .directory { color: var(--blue); font-weight: bold; }
-        .command { color: var(--text); }
-
-        .output {
-            color: var(--subtext1);
-            margin-bottom: 20px;
-            padding-left: 10px;
-            border-left: 2px solid var(--overlay0);
-            margin-top: 5px;
-            word-wrap: break-word;
-        }
-
-        .profile-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-top: 10px;
-        }
-
-        .profile-img {
-            width: 110px;
-            height: 110px;
-            object-fit: cover;
-            border: 2px solid var(--mauve);
-            border-radius: 8px;
-            background-color: var(--mantle);
-            flex-shrink: 0;
-        }
-
-        .steam-widget {
-            margin-top: 15px;
-            width: 100%;
-            max-width: 646px;
-            overflow-x: auto;
-        }
-
-        .highlight-mauve { color: var(--mauve); font-weight: bold; }
-        .highlight-peach { color: var(--peach); }
-        .highlight-blue { color: var(--blue); text-decoration: none; }
-
-        .ascii-art {
-            color: var(--mauve);
-            white-space: pre;
-            font-size: 0.7vw; /* Scaling for name width */
-            line-height: 1.2;
-            margin-bottom: 25px;
-            font-weight: bold;
-            text-align: left;
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 1em;
-            background-color: var(--text);
-            animation: blink 1s step-end infinite;
-            margin-left: 4px;
-            vertical-align: middle;
-        }
-
-        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            .ascii-art { font-size: 1.5vw; }
-            .profile-container { flex-direction: column; align-items: flex-start; }
-            .terminal-body { font-size: 12px; }
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--mantle); }
-        ::-webkit-scrollbar-thumb { background: var(--overlay0); border-radius: 3px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -180,19 +21,19 @@
         
         <div class="terminal-body" id="terminal-body">
             <div class="ascii-art">
-                                                                                                                                                      
-  888888                        888                         .d8888b.                                                             
-    "88b                        888                        d88P  Y88b                                                            
-     888                        888                        888    888                                                            
-     888  8888b.  888  888  .d88888  .d88b.  88888b.       888        888  888 888d888 888d888 .d88b.  88888b.   .d8888b .d88b.  
-     888     "88b 888  888 d88" 888 d8P  Y8b 888 "88b      888        888  888 888P"   888P"  d8P  Y8b 888 "88b d88P"   d8P  Y8b 
-     888 .d888888 888  888 888  888 88888888 888  888      888    888 888  888 888     888    88888888 888  888 888     88888888 
-     88P 888  888 Y88b 888 Y88b 888 Y8b.     888  888      Y88b  d88P Y88b 888 888     888    Y8b.     888  888 Y88b.   Y8b.     
-     888 "Y888888  "Y88888  "Y88888  "Y8888  888  888       "Y8888P"   "Y88888 888     888     "Y8888  888  888  "Y8888P "Y8888  
-   .d88P               888                                                                                                       
- .d88P"           Y8b d88P                                                                                                       
-888P"              "Y88P"                                                                                                                                                                                                                                
-                                                                                                                                                                                                                             
+     ██╗ █████╗ ██╗   ██╗██████╗ ███████╗███╗   ██╗     ██████╗██╗   ██╗██████╗ ██████╗ ███████╗███╗   ██╗ ██████╗███████╗
+     ██║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔════╝████╗  ██║    ██╔════╝██║   ██║██╔══██╗██╔══██╗██╔════╝████╗  ██║██╔════╝██╔════╝
+     ██║███████║ ╚████╔╝ ██║  ██║█████╗  ██╔██╗ ██║    ██║     ██║   ██║██████╔╝██████╔╝█████╗  ██╔██╗ ██║██║     █████╗  
+██   ██║██╔══██║  ╚██╔╝  ██║  ██║██╔══╝  ██║╚██╗██║    ██║     ██║   ██║██╔══██╗██╔══██╗██╔══╝  ██║╚██╗██║██║     ██╔══╝  
+╚█████╔╝██║  ██║   ██║   ██████╔╝███████╗██║ ╚████║    ╚██████╗╚██████╔╝██║  ██║██║  ██║███████╗██║ ╚████║╚██████╗███████╗
+ ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═══╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝╚══════╝
+                                                                                                                          
+ ██████╗  █████╗ ███╗   ███╗███████╗    ██████╗ ██████╗  ██████╗ ██████╗ ██╗   ██╗ ██████╗███████╗██████╗                 
+██╔════╝ ██╔══██╗████╗ ████║██╔════╝    ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝██╔════╝██╔══██╗                
+██║  ███╗███████║██╔████╔██║█████╗      ██████╔╝██████╔╝██║   ██║██║  ██║██║   ██║██║     █████╗  ██████╔╝                
+██║   ██║██╔══██║██║╚██╔╝██║██╔══╝      ██╔═══╝ ██╔══██╗██║   ██║██║  ██║██║   ██║██║     ██╔══╝  ██╔══██╗                
+╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗    ██║     ██║  ██║╚██████╔╝██████╔╝╚██████╔╝╚██████╗███████╗██║  ██║                
+ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝╚══════╝╚═╝  ╚═╝                
             </div>
 
             <div>
@@ -203,40 +44,89 @@
                     <img src="profilepic.jpg" alt="Jayden Currence" class="profile-img">
                     <div>
                         <span class="highlight-mauve">Jayden Currence</span><br>
-                        > Game Producer | Digital Media Junior @ UCF
+                        > Game Producer | Digital Media Senior @ UCF
                     </div>
                 </div>
+            </div>
+
+            <div>
+                <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~</span>$ <span class="command">cat skills.txt</span>
+            </div>
+            <div class="output">
+                <span class="highlight-peach">Technical Skills:</span> Unreal Engine, C#, Unity, Asana, Jira, Git, Agile/Scrum<br>
+                <span class="highlight-peach">Soft Skills:</span> Team Leadership, Project Management, Communication, Problem-Solving<br>
+                <span class="highlight-peach">Other:</span> Level Design, Community Engagement, Audio Production, Pipeline Optimization 
             </div>
 
             <div>
                 <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~</span>$ <span class="command">cat about.txt</span>
             </div>
             <div class="output">
-                I am a Game Producer focused on high-efficiency team workflows and creative problem-solving. My background in Godot and C# allows me to translate technical hurdles into actionable production goals.
+                Hello! I'm Jayden Currence, a passionate Game Producer and Digital Media Senior at the University of Central Florida, set to graduate in 2026. With a strong foundation in both technical and creative aspects of game development, I specialize in bridging the gap between innovative ideas and efficient production pipelines.<br><br>
+
+                My journey into game production began with a love for storytelling and interactive experiences. I've honed my skills in leading cross-functional teams, managing complex projects, and optimizing workflows to deliver high-quality games on time. Whether working with Unity or Unreal Engine, I thrive on turning technical challenges into opportunities for creative solutions.<br><br>
+
+                Beyond production, I'm deeply involved in community engagement and audio design, believing that great games resonate on multiple levels. I'm always eager to collaborate on projects that push boundaries and create memorable experiences for players.<br><br>
+
+                When I'm not producing games, you can find me exploring new photography techniques, diving into indie games on Steam, or experimenting with new tools in my development toolkit. Let's connect and build something amazing together!
+            </div>
+
+            <div>
+                <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~</span>$ <span class="command">cat experience.txt</span>
+            </div>
+            <div class="output">
+                <span class="highlight-peach">Education:</span> B.S. Digital Media, University of Central Florida (Expected Graduation: 2026)<br>
+                <span class="highlight-peach">Relevant Coursework:</span> Game Design, Project Management, Audio Production, Programming<br>
+                <span class="highlight-peach">Internships:</span> Game Development Intern at [Company] (Summer 2024) - Assisted in production pipeline optimization<br>
             </div>
 
             <div>
                 <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~/projects</span>$ <span class="command">./coldsnap --info</span>
             </div>
             <div class="output">
-                <span class="highlight-mauve">### PROJECT: COLDSNAP ###</span><br>
+                <span class="highlight-mauve">
+                    ### PROJECT: COLDSNAP ###</span><br>
                 <span class="highlight-peach">Role:</span> Lead Game Producer (19-person team)<br>
-                <span class="highlight-peach">Key:</span> Asana restructuring, Audio Strategy, Pipeline Management.<br>
+                <span class="highlight-peach">Technologies:</span> Unreal Engine, C#, Asana, Jira<br>
+                <span class="highlight-peach">Key Achievements:</span> Restructured workflows for 40% efficiency gain, led audio strategy implementation, managed pipeline for on-time delivery<br>
+                <span class="highlight-peach">Outcome:</span> Successfully launched on Steam with positive community feedback<br>
                 
                 <div class="steam-widget">
                     <iframe src="https://store.steampowered.com/widget/4598810/" frameborder="0" width="646" height="190"></iframe>
                 </div>
             </div>
 
+
+            <!-- TODO ADD GRIMM'S CAFE KEY INFO AND ITCH PAGE WIDGET -->
+            <div>
+                <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~/projects</span>$ <span class="command">./grimms_cafe --info</span>
+            </div>
+            <div class="output">
+                <span class="highlight-mauve">### PROJECT: GRIMM'S CAFE ###</span><br>
+                <span class="highlight-peach">Role:</span> Game Producer<br>
+                <!-- TODO ADD MORE DETAILED INFORMATION -->
+                <span class="highlight-peach">Technologies:</span> Unity, C#, Trello<br>
+                <span class="highlight-peach">Key Achievements:</span> Coordinated 5-person team, implemented agile development practices, designed level progression<br>
+                <span class="highlight-peach">Outcome:</span> Completed prototype with engaging gameplay mechanics<br>
+            </div>
+
             <div>
                 <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~</span>$ <span class="command">ls -l contact/</span>
             </div>
             <div class="output">
-                If you are looking for a Producer who understands both the technical trenches and high-level project management, let's connect.<br><br>
-                <span class="highlight-peach">Email:</span>    <a href="mailto:jaydencurrence@gmail.com" class="highlight-blue">your.email@example.com</a><br>
-                <span class="highlight-peach">LinkedIn:</span> <a href="#" class="highlight-blue">linkedin.com/in/jaydencurrence</a><br>
+                <span class="highlight-peach">Let's Connect!</span> I'm always open to discussing new opportunities in game production and development.<br><br>
+                <span class="highlight-peach">Email:</span>    <a href="mailto:jaydencurrence@gmail.com" class="highlight-blue">jaydencurrence@gmail.com</a><br>
+                <span class="highlight-peach">LinkedIn:</span> <a href="https://www.linkedin.com/in/jayden-currence-7a7561294/" class="highlight-blue">linkedin.com/in/jaydencurrence</a><br>
                 <span class="highlight-peach">GitHub:</span>   <a href="https://github.com/NerdForEternity" class="highlight-blue">github.com/NerdForEternity</a><br>
-                <span class="highlight-peach">Resume:</span>   <a href="#" class="highlight-blue">download_resume.pdf</a>
+                <span class="highlight-peach">Resume:</span>   <a href="jayden_currence_resume.pdf" class="highlight-blue">jayden_currence_resume.pdf</a>
+            </div>
+
+            <div>
+                <span class="prompt">jayden_currence@portfolio</span>:<span class="directory">~</span>$ <span class="command">ls -l hobbies/</span>
+            </div>
+            <div class="output">
+                <span class="highlight-peach">Photography Portfolio:</span> <a href="https://jaydencurrence.wixsite.com/photo-portfolio" class="highlight-blue">https://jaydencurrence.wixsite.com/photo-portfolio</a><br>
+                <span class="highlight-peach">Steam:</span> <a href="https://steamcommunity.com/id/NerdForEternity/" class="highlight-blue">steamcommunity.com/id/NerdForEternity</a>
             </div>
 
             <div>
@@ -247,7 +137,29 @@
 
     <script>
         const terminalBody = document.getElementById('terminal-body');
-        terminalBody.scrollTop = terminalBody.scrollHeight;
+        terminalBody.scrollTop = 0; // keep the ASCII art visible at page load
+
+        // Add interactive fun: clicking the ASCII art shows a mini-game iframe
+        const asciiArt = document.querySelector('.ascii-art');
+        const originalContent = asciiArt.innerHTML;
+        asciiArt.style.cursor = 'pointer';
+        let isIframeShown = false;
+
+        asciiArt.addEventListener('click', (e) => {
+            if (!isIframeShown) {
+                asciiArt.innerHTML = '<iframe src="JCPurgatory.html" width="400px" height="400px" frameborder="0"></iframe>';
+                isIframeShown = true;
+                e.stopPropagation(); // Prevent triggering the document click
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (isIframeShown && !asciiArt.contains(e.target)) {
+                asciiArt.innerHTML = originalContent;
+                isIframeShown = false;
+            }
+        });
     </script>
 </body>
 </html>
+
