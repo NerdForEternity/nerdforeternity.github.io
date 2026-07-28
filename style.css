@@ -144,6 +144,7 @@ body::before {
     border-left: 2px solid var(--overlay0);
     margin-top: 5px;
     word-wrap: break-word;
+    font-size: 16px;
 }
 
 .profile-container {
